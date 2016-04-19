@@ -2,35 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>grow a div</title>
+  <title>Cam</title>
   <link rel="stylesheet" href="styles.css">
   <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div id="top-efx-holder">
-    <p id="about-circle"><span id="abt-txt">About Me</span></p>
-  </div>
-  <div id="main-holder">
+    <ul class="nav-list list">
+      <li>About</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
+  <div id="efx-holder">
+
     <div id="about-holder">
+      <h1 id="about-circle"><span id="abt-txt">About Me</span></h1>
       <div class="blurb">
-        Hey, I'm Cam. I'm a student in General Assembly's Web Development Immersive.<br><br>
-        I'm all about client-side web programming.<br><br>
-        I can make full stack web apps too.<br><br>
-        You can see some completed projects...<br><br>
-        <a href="#"><eM>HERE</em></a>, and <a href="#"><em>HERE<em></a>
+        Hey, I'm Cam. I'm a student in General Assembly's Web Development Immersive.
+        I'm all about client-side web programming.
+        I can make full stack web apps too.
+        You can see some completed projects...
+        <a href="#"><em>HERE</em></a>, and <a href="#"><em>HERE<em></a>
       </div>
     </div>
+
     <div id="con-holder">
-      <p id="con-circle"><span id="con-txt">Contact</span></p>
-    </div>
-      <ul id="contact-list">
+
+      <h1 id="con-circle"><span id="con-txt">Contact</span></h1>
+
+      <ul class="con-list list">
         <li><a href="mailto:camlatimer@gmail.com">camlatimer@gmail.com</a></li>
         <li><a href="https://github/CamLatimer">Github</a></li>
         <li><a href="https://twitter.com/cam-one-hundred">Twitter</a></li>
         <li><a href="https://profiles.generalassemb.ly/profiles/cam-latimer">GA Profile</a></li>
       </ul>
+
+    </div>
+
+    <div id="proj-holder">
+      <h1 id="proj-circle"><span id="proj-txt">Projects</span></h1>
+    </div>
+
   </div>
-  <div id="main-holder"></div>
 
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0-rc.1/jquery-ui.js" integrity="sha256-IY2gCpIs4xnQTJzCIPlL3uUgSOwVQYD9M8t208V+7KA=" crossorigin="anonymous"></script>
