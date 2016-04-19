@@ -1,4 +1,36 @@
 body {
-  color: blue; }
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box; }
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center; }
+
+.list {
+  display: none;
+  list-style: none;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center; }
+  .list li {
+    margin-bottom: 35px; }
+
+.nav-list {
+  margin-top: 50px;
+  margin-bottom: 20px; }
+
+#about-holder, #con-holder, #proj-holder {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 100px; }
+
+.blurb {
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */

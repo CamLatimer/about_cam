@@ -1,5 +1,40 @@
-$myColor: blue;
-
+@mixin wideBody(){
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+@mixin treQuarterBody(){
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
 body{
-  color: $myColor;
+  position: relative;
+  @include wideBody();
+  box-sizing: content-box;
+}
+h1{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.list{
+  display: none;
+  list-style: none;
+  @include treQuarterBody();
+  text-align: center;
+  li{
+    margin-bottom: 35px;
+  }
+}
+.nav-list{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#about-holder, #con-holder, #proj-holder {
+  position: relative;
+  @include treQuarterBody();
+  margin-top: 100px;
+}
+.blurb{
+  display: none;
 }
