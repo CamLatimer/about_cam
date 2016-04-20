@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-$coolBlue: rgba(0, 190, 180, .5);
+$mainColor: rgba(10, 10,10, 1);
+// $mainColor: rgba(0, 190, 180, .5);
 
 @mixin wideBody(){
   width: 100%;
@@ -17,10 +18,12 @@ body{
   @include wideBody();
   box-sizing: content-box;
   font-family: 'Raleway', sans-serif;
+  color: $mainColor;
+  font-style: italic;
 }
 a {
   text-decoration: none;
-  color: $coolBlue;
+  color: $mainColor;
 }
 .info-header{
   width: 100%;
@@ -47,10 +50,11 @@ a {
 }
 .blurb{
   display: none;
+  font-size: 1.8em;
 }
 .circle{
   position: relative;
-  background: $coolBlue;
+  background: $mainColor;
   border-radius: 500px;
   height: 100px;
   width: 100px;
@@ -72,21 +76,25 @@ span.circ-text{
 .scrn-shot{
   position: relative;
   display: block;
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 120px;
   margin: 0 auto;
-  border-top: 1px solid $coolBlue;
-  border-bottom: 1px solid $coolBlue;
+  border-top: 1px solid $mainColor;
+  border-bottom: 1px solid $mainColor;
 }
 .proj-title{
   text-align: center;
 }
 .proj-menu{
+  margin: 0 auto;
   li{
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     display: inline-block;
   }
 }
 .proj-viewer{
   display: none;
+}
+.info-header{
+  height: 100px;
 }
