@@ -4,6 +4,7 @@ var watch = require('gulp-watch');
 var connect = require('gulp-connect');
 
 gulp.task('sass', function () {
+  //if other tasks depend on this task, it must return something
   return gulp.src('styles.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest('./css/'))
@@ -15,7 +16,13 @@ gulp.task('html', function(){
   .pipe(connect.reload());
 });
 
+gulp.task('javascript', function(){
+  return gulp.src('script.js')
+  .pipe(connect.reload());
+})
+
 gulp.task('watch', function () {
+  gulp.watch('script.js', ['javascript']);
   gulp.watch('styles.scss', ['sass']);
   gulp.watch('index.html', ['html']);
 });
@@ -26,4 +33,4 @@ gulp.task('connect', function() {
   })
 });
 
-gulp.task('default', ['html', 'sass', 'connect', 'watch'])
+gulp.task('default', ['javascript', 'html', 'sass', 'connect', 'watch'])
