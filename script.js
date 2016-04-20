@@ -1,14 +1,17 @@
 (function(){
   var abtCircle  = $('#about-circle');
+  var resuCircle = $('#resu-circle');
   var conCircle  = $('#con-circle');
   var projCircle = $('#proj-circle');
 
   var abtBlinker = new Blinker(abtCircle, 2000, 700, 500);
+  var resuBlinker = new Blinker(resuCircle, 2400, 1000, 230);
   var conBlinker = new Blinker(conCircle, 1000, 1000, 400);
   var projBlinker = new Blinker(projCircle, 900, 600, 200);
 
   abtBlinker.pulse();
   conBlinker.pulse();
+  resuBlinker.pulse();
   projBlinker.pulse();
 // end iife
 })();
