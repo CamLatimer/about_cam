@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Didact+Gothic);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+$coolBlue: rgba(0, 190, 180, .5);
+
 @mixin wideBody(){
   width: 100%;
   margin: 0;
@@ -13,15 +16,18 @@ body{
   position: relative;
   @include wideBody();
   box-sizing: content-box;
+  font-family: 'Raleway', sans-serif;
 }
-
+a {
+  text-decoration: none;
+  color: $coolBlue;
+}
 .info-header{
   width: 100%;
   height: 100px;
 }
 
 .list{
-  display: none;
   list-style: none;
   @include treQuarterBody();
   text-align: center;
@@ -29,21 +35,22 @@ body{
     margin-bottom: 35px;
   }
 }
-.nav-list{
+.nav-list, .con-list{
   margin-top: 50px;
   margin-bottom: 20px;
+  display:none;
 }
-#about-holder, #con-holder, #proj-holder {
+#about-holder, #resu-holder, #con-holder, #proj-holder {
   position: relative;
   @include treQuarterBody();
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .blurb{
   display: none;
 }
 .circle{
   position: relative;
-  background: rgba(0, 200, 240, .5);
+  background: $coolBlue;
   border-radius: 500px;
   height: 100px;
   width: 100px;
@@ -61,4 +68,25 @@ span.circ-text{
   color: white;
   font-family: 'Didact Gothic', sans-serif;
   font-style: italic;
+}
+.scrn-shot{
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  border-top: 1px solid $coolBlue;
+  border-bottom: 1px solid $coolBlue;
+}
+.proj-title{
+  text-align: center;
+}
+.proj-menu{
+  li{
+    margin-top: 20px;
+    display: inline-block;
+  }
+}
+.proj-viewer{
+  display: none;
 }
