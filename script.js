@@ -4,15 +4,19 @@
   var conCircle   = $('#con-circle');
   var projCircle  = $('#proj-circle');
 
-  var abtBlinker  = new Blinker(abtCircle, 100, 300, 1000);
-  var resuBlinker = new Blinker(resuCircle, 80, 800, 1980);
-  var conBlinker  = new Blinker(conCircle, 70, 500, 2800);
-  var projBlinker = new Blinker(projCircle, 20, 600, 970);
+  var abtBlinker  = new Blinker(abtCircle, 20, 2000, 2000);
+  var projBlinker = new Blinker(projCircle, 100, 2000, 2000);
+  var resuBlinker = new Blinker(resuCircle, 100, 1000, 1000);
+  var conBlinker  = new Blinker(conCircle, 100, 6000, 6000);
 
-  abtBlinker.pulse();
-  conBlinker.pulse();
-  resuBlinker.pulse();
-  projBlinker.pulse();
+  setTimeout(function(){
+    abtBlinker.pulse();
+    projBlinker.pulse();
+    resuBlinker.pulse();
+    conBlinker.pulse();
+  }, 1000);
+
+
   $('.abt-header').click(function(){
     console.log('clicked');
     showEls('.blurb');
