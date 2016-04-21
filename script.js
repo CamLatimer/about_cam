@@ -17,7 +17,7 @@
     console.log('clicked');
     showEls('.blurb');
   });
-  $('.proj-header').click(function(){
+  $('.proj-header, #proj-link').click(function(){
     console.log('clicked');
     showEls('.proj-viewer');
   });
