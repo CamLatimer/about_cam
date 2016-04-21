@@ -4,24 +4,24 @@
   var conCircle   = $('#con-circle');
   var projCircle  = $('#proj-circle');
 
-  var abtBlinker  = new Blinker(abtCircle, 2000, 700, 1000);
-  var resuBlinker = new Blinker(resuCircle, 2400, 1000, 1980);
-  var conBlinker  = new Blinker(conCircle, 1000, 1000, 2800);
-  var projBlinker = new Blinker(projCircle, 900, 600, 970);
+  var abtBlinker  = new Blinker(abtCircle, 100, 300, 1000);
+  var resuBlinker = new Blinker(resuCircle, 80, 800, 1980);
+  var conBlinker  = new Blinker(conCircle, 70, 500, 2800);
+  var projBlinker = new Blinker(projCircle, 20, 600, 970);
 
   abtBlinker.pulse();
   conBlinker.pulse();
   resuBlinker.pulse();
   projBlinker.pulse();
-  $('#about-holder').click(function(){
+  $('.abt-header').click(function(){
     console.log('clicked');
     showEls('.blurb');
   });
-  $('#proj-holder').click(function(){
+  $('.proj-header').click(function(){
     console.log('clicked');
     showEls('.proj-viewer');
   });
-  $('#con-holder').click(function(){
+  $('.con-header').click(function(){
     showEls('.con-list');
   });
 // end iife
