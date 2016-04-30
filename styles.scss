@@ -80,11 +80,13 @@ span.circ-text{
   width: 200px;
   height: 120px;
   margin: 0 auto;
-  border-top: 1px solid $mainColor;
-  border-bottom: 1px solid $mainColor;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 .proj-title{
   text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 .proj-menu{
   margin: 0 auto;
@@ -103,7 +105,7 @@ span.circ-text{
   font-style: normal;
   font-size: 1.4em;
   font-weight: bold;
-  border: 1px solid grey;
+  border: 1px solid gray ;
   background: #002;
   color: white;
   cursor: pointer;
