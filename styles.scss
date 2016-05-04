@@ -52,7 +52,19 @@ a {
 }
 .con-list{
   display:none;
+  li a{
+    background: black;
+    color: white;
+    margin: 20px;
+    padding: 5px;
+  }
+  a:hover{
+    background: white;
+    color:black;
+    transition: background 1s;
+  }
 }
+
 #about-holder, #resu-holder, #con-holder, #proj-holder {
   position: relative;
   height: 300px;
@@ -96,7 +108,7 @@ span.circ-text{
 }
 .proj-title{
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: bold;
   margin: 70px auto 20px auto;
 }
@@ -134,4 +146,5 @@ span.circ-text{
 .demo-details{
   width: 70%;
   margin: auto;
+  line-height: 1.4em; 
 }
