@@ -31,7 +31,7 @@
 // end iife
 })();
 
-function Blinker(element, growPerc, puffSpeed, blinkSpeed){
+function Blinker(element, puffSpeed, blinkSpeed){
   var blinker = this;
   blinkSpeed != null ? blinker.blinkSpeed = blinkSpeed : 230;
   blinker.blinkerEl = element;
