@@ -12,8 +12,18 @@ body {
   height: 100%; }
 
 a {
-  text-decoration: none;
-  color: #0a0a0a; }
+  text-decoration: none; }
+
+.more-info {
+  background: black;
+  color: white;
+  margin: 20px;
+  padding: 5px; }
+
+.more-info:hover {
+  background: white;
+  color: black;
+  transition: background 1s; }
 
 #efx-holder {
   position: relative;
@@ -75,14 +85,13 @@ span.circ-text {
   display: block;
   width: 200px;
   height: 120px;
-  margin: 0 auto;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray; }
+  margin: 0 auto; }
 
 .proj-title {
   text-align: center;
-  font-size: 1.8em;
-  font-weight: bold; }
+  font-size: 3em;
+  font-weight: bold;
+  margin: 70px auto 20px auto; }
 
 .proj-menu {
   margin: 0 auto; }
@@ -91,7 +100,9 @@ span.circ-text {
     display: inline-block; }
 
 .proj-viewer {
-  display: none; }
+  position: relative;
+  display: none;
+  top: -60px; }
 
 #proj-link {
   font-style: normal;
@@ -101,3 +112,17 @@ span.circ-text {
   background: #002;
   color: white;
   cursor: pointer; }
+
+#rsvp-shot {
+  position: relative;
+  top: -15px; }
+
+.demo-links {
+  margin-bottom: 35px; }
+
+#giph-shot {
+  margin: 0 auto 35px auto; }
+
+.demo-details {
+  width: 70%;
+  margin: auto; }

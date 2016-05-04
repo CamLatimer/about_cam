@@ -19,7 +19,17 @@ body{
 }
 a {
   text-decoration: none;
-  color: $mainColor;
+}
+.more-info {
+  background: black;
+  color: white;
+  margin: 20px;
+  padding: 5px;
+}
+.more-info:hover{
+  background: white;
+  color:black;
+  transition: background 1s;
 }
 #efx-holder{
   position: relative;
@@ -83,13 +93,12 @@ span.circ-text{
   width: 200px;
   height: 120px;
   margin: 0 auto;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
 }
 .proj-title{
   text-align: center;
-  font-size: 1.8em;
+  font-size: 3em;
   font-weight: bold;
+  margin: 70px auto 20px auto;
 }
 .proj-menu{
   margin: 0 auto;
@@ -99,7 +108,9 @@ span.circ-text{
   }
 }
 .proj-viewer{
+  position: relative;
   display: none;
+  top: -60px;
 }
 #proj-link{
   font-style: normal;
@@ -109,4 +120,18 @@ span.circ-text{
   background: #002;
   color: white;
   cursor: pointer;
+}
+#rsvp-shot{
+  position: relative;
+  top: -15px;
+}
+.demo-links{
+  margin-bottom: 35px;
+}
+#giph-shot{
+  margin: 0 auto 35px auto;
+}
+.demo-details{
+  width: 70%;
+  margin: auto;
 }
