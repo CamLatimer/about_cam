@@ -4,10 +4,10 @@
   var conCircle   = $('#con-circle');
   var projCircle  = $('#proj-circle');
 
-  var abtBlinker  = new Blinker(abtCircle, 20, 2000, 2000);
-  var projBlinker = new Blinker(projCircle, 100, 2000, 2000);
-  var resuBlinker = new Blinker(resuCircle, 100, 1000, 1000);
-  var conBlinker  = new Blinker(conCircle, 100, 6000, 6000);
+  var abtBlinker  = new Blinker(abtCircle, 2000, 1400);
+  var projBlinker = new Blinker(projCircle, 2000, 1300);
+  var resuBlinker = new Blinker(resuCircle, 1000, 1100);
+  var conBlinker  = new Blinker(conCircle, 6000, 1200);
 
   setTimeout(function(){
     abtBlinker.pulse();
@@ -37,7 +37,7 @@ function Blinker(element, growPerc, puffSpeed, blinkSpeed){
   blinker.blinkerEl = element;
   blinker.iD;
   blinker.grow = function(){
-    blinker.blinkerEl.toggle("puff",{percet: growPerc}, puffSpeed);
+    blinker.blinkerEl.toggle("puff", puffSpeed);
   };
   blinker.pulse = function(){
     blinker.grow();
