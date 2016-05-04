@@ -4,8 +4,8 @@
   var conCircle   = $('#con-circle');
   var projCircle  = $('#proj-circle');
 
-  var abtBlinker  = new Blinker(abtCircle, 2000, 1400);
-  var projBlinker = new Blinker(projCircle, 2000, 1300);
+  var abtBlinker  = new Blinker(abtCircle, 1800, 1400);
+  var projBlinker = new Blinker(projCircle, 2700, 1300);
   var resuBlinker = new Blinker(resuCircle, 1000, 1100);
   var conBlinker  = new Blinker(conCircle, 6000, 1200);
 

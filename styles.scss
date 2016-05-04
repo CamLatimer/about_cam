@@ -67,7 +67,7 @@ a {
 
 #about-holder, #resu-holder, #con-holder, #proj-holder {
   position: relative;
-  height: 300px;
+  height: 340px;
   margin: 0 auto;
   padding: 0;
 }
@@ -82,9 +82,9 @@ a {
   position: relative;
   background: $mainColor;
   border-radius: 500px;
-  height: 140px;
-  width: 140px;
-  top: 28%;
+  height: 180px;
+  width: 180px;
+  top: 20%;
   padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -98,6 +98,7 @@ span.circ-text{
   color: white;
   font-family: 'Didact Gothic', sans-serif;
   font-style: italic;
+  font-size: 2em;
 }
 .scrn-shot{
   position: relative;
