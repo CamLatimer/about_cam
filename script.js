@@ -49,11 +49,11 @@ function Blinker(element, puffSpeed, blinkSpeed){
     blinker.blinkerEl.show();
     clearTimeout(stopperId);
   }
-  blinker.blinkerEl.hover(function(){
-    blinker.stopPulse(blinker.iD);
-  }, function(){
-    blinker.pulse()
-  });
+  // blinker.blinkerEl.hover(function(){
+  //   blinker.stopPulse(blinker.iD);
+  // }, function(){
+  //   blinker.pulse()
+  // });
 }
 
 function showEls(display){
