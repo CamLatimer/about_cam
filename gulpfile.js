@@ -7,7 +7,7 @@ gulp.task('sass', function () {
   //if other tasks depend on this task, it must return something
   return gulp.src('styles.scss')
   .pipe(sass().on('error', sass.logError))
-  .pipe(gulp.dest('./css/'))
+  .pipe(gulp.dest('./'))
   .pipe(connect.reload());
 });
 
