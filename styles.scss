@@ -8,11 +8,6 @@ $mainColor: rgba(10, 10,10, 1);
   margin: 0;
   padding: 0;
 }
-@mixin treQuarterBody(){
-  width: 75%;
-  margin: 0 auto;
-  padding: 0;
-}
 body{
   position: relative;
   @include wideBody();
@@ -20,51 +15,58 @@ body{
   font-family: 'Raleway', sans-serif;
   color: $mainColor;
   font-style: italic;
+  height: 100%;
 }
 a {
   text-decoration: none;
   color: $mainColor;
 }
+#efx-holder{
+  position: relative;
+  top: 150px;
+  padding: 0;
+}
 .info-header{
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
-
 .list{
   list-style: none;
-  @include treQuarterBody();
+  margin: auto;
+  padding: 0;
   text-align: center;
   li{
     margin-bottom: 35px;
   }
 }
 .con-list{
-  margin-top: 50px;
-  margin-bottom: 20px;
   display:none;
 }
 #about-holder, #resu-holder, #con-holder, #proj-holder {
   position: relative;
-  @include treQuarterBody();
-  margin-top: 60px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 0;
 }
 .blurb{
   display: none;
   font-size: 1.8em;
   line-height: 1.8em;
+  width: 60%;
+  margin: auto;
 }
 .circle{
   position: relative;
   background: $mainColor;
   border-radius: 500px;
-  height: 100px;
-  width: 100px;
-  text-align: center;
+  height: 140px;
+  width: 140px;
+  top: 28%;
   padding: 0;
-  box-sizing: content-box;
-  cursor: pointer;
-  padding-right: 2px;
   margin: 0 auto;
+  text-align: center;
+  padding-right: 2px;
+  cursor: pointer;
   color: white;
 }
 span.circ-text{
@@ -97,9 +99,6 @@ span.circ-text{
 }
 .proj-viewer{
   display: none;
-}
-.info-header{
-  height: 100px;
 }
 #proj-link{
   font-style: normal;
