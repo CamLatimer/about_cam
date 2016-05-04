@@ -48,8 +48,8 @@ a {
   .con-list li a {
     background: black;
     color: white;
-    margin: 20px;
-    padding: 5px; }
+    padding-right: 20px;
+    font-size: 3em; }
   .con-list a:hover {
     background: white;
     color: black;
@@ -92,8 +92,8 @@ span.circ-text {
 .scrn-shot {
   position: relative;
   display: block;
-  width: 200px;
-  height: 120px;
+  width: 300px;
+  height: 220px;
   margin: 0 auto; }
 
 .proj-title {
@@ -128,11 +128,15 @@ span.circ-text {
 
 .demo-links {
   margin-bottom: 35px; }
+  .demo-links a {
+    padding: 20px;
+    font-size: 2em; }
 
 #giph-shot {
   margin: 0 auto 35px auto; }
 
 .demo-details {
-  width: 70%;
+  width: 80%;
   margin: auto;
-  line-height: 1.4em; }
+  line-height: 1.8em;
+  font-size: 2em; }
