@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: 'Raleway', sans-serif;
+  color: #0a0a0a;
+  font-style: italic;
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: #0a0a0a; }
+
+#efx-holder {
+  position: relative;
+  top: 150px;
+  padding: 0; }
+
+.info-header {
+  width: 100%;
+  height: 100%; }
+
+.list {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  text-align: center; }
+  .list li {
+    margin-bottom: 35px; }
+
+.con-list {
+  display: none; }
+
+#about-holder, #resu-holder, #con-holder, #proj-holder {
+  position: relative;
+  height: 300px;
+  margin: 0 auto;
+  padding: 0; }
+
+.blurb {
+  display: none;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  width: 60%;
+  margin: auto; }
+
+.circle {
+  position: relative;
+  background: #0a0a0a;
+  border-radius: 500px;
+  height: 140px;
+  width: 140px;
+  top: 28%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 2px;
+  cursor: pointer;
+  color: white; }
+
+span.circ-text {
+  position: relative;
+  top: 35%;
+  color: white;
+  font-family: 'Didact Gothic', sans-serif;
+  font-style: italic; }
+
+.scrn-shot {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 120px;
+  margin: 0 auto;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray; }
+
+.proj-title {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold; }
+
+.proj-menu {
+  margin: 0 auto; }
+  .proj-menu li {
+    margin: 20px auto 0 auto;
+    display: inline-block; }
+
+.proj-viewer {
+  display: none; }
+
+#proj-link {
+  font-style: normal;
+  font-size: 1.4em;
+  font-weight: bold;
+  border: 1px solid gray;
+  background: #002;
+  color: white;
+  cursor: pointer; }
