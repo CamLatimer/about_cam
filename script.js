@@ -1,20 +1,15 @@
 (function(){
-  var abtCircle   = $('#about-circle');
-  var resuCircle  = $('#resu-circle');
-  var conCircle   = $('#con-circle');
-  var projCircle  = $('#proj-circle');
-
-  var abtBlinker  = new Blinker(abtCircle, 1800, 1400);
-  var projBlinker = new Blinker(projCircle, 2700, 1300);
-  var resuBlinker = new Blinker(resuCircle, 1000, 1100);
-  var conBlinker  = new Blinker(conCircle, 6000, 1200);
+  var abtBlinker  = new Blinker('.about-circle', 1800, 1400);
+  var projBlinker = new Blinker('.proj-circle', 2700, 1300);
+  var resuBlinker = new Blinker('.resu-circle', 1000, 1100);
+  var conBlinker  = new Blinker('.con-circle', 6000, 1200);
 
   setTimeout(function(){
     abtBlinker.pulse();
     projBlinker.pulse();
     resuBlinker.pulse();
     conBlinker.pulse();
-  }, 1000);
+  }, 90);
 
 
   $('.abt-header').click(function(){
@@ -34,10 +29,10 @@
 function Blinker(element, puffSpeed, blinkSpeed){
   var blinker = this;
   blinkSpeed != null ? blinker.blinkSpeed = blinkSpeed : 230;
-  blinker.blinkerEl = element;
+  blinker.blinkerEl = $(element);
   blinker.iD;
   blinker.grow = function(){
-    blinker.blinkerEl.toggle("puff", puffSpeed);
+    blinker.blinkerEl.toggle("puff",{mode: 'show'}, puffSpeed);
   };
   blinker.pulse = function(){
     blinker.grow();
@@ -46,20 +41,20 @@ function Blinker(element, puffSpeed, blinkSpeed){
     }, blinker.blinkSpeed);
   };
   blinker.stopPulse = function(stopperId) {
-    blinker.blinkerEl.show();
     clearTimeout(stopperId);
   }
-  // blinker.blinkerEl.hover(function(){
-  //   blinker.stopPulse(blinker.iD);
-  // }, function(){
-  //   blinker.pulse()
-  // });
+  blinker.blinkerEl.hover(function(){
+    blinker.blinkerEl.stop(true, true).css('opacity', '1');
+    blinker.stopPulse(blinker.iD);
+  }, function(){
+    blinker.pulse();
+  });
 }
 
 function showEls(display){
   $(display).toggle('slide', "left", 400);
   var dispSet = $(display).offset();
-  $('body').animate({scrollTop: dispSet.top-50});
+  $("html,body").animate({scrollTop: dispSet.top-50});
 }
 
 /* running pulse() within pulse() instead of using setInterval helped to avoid
