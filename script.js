@@ -1,7 +1,7 @@
 (function(){
   var abtBlinker  = new Blinker('.about-circle', 1800, 1400);
   var projBlinker = new Blinker('.proj-circle', 2700, 1300);
-  var resuBlinker = new Blinker('.resu-circle', 1000, 1100);
+  var resuBlinker = new Blinker('.resu-circle', 1900, 1900);
   var conBlinker  = new Blinker('.con-circle', 6000, 1200);
 
   setTimeout(function(){
