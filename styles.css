@@ -43,10 +43,11 @@ a {
   padding: 0;
   text-align: center; }
   .list li {
-    margin-bottom: 35px; }
+    margin-bottom: 80px; }
 
 .con-list {
-  display: none; }
+  display: none;
+  margin-bottom: 150px; }
   .con-list li a {
     background: black;
     color: white;
