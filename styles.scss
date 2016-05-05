@@ -3,19 +3,17 @@
 $mainColor: rgba(10, 10,10, 1);
 // $mainColor: rgba(0, 190, 180, .5);
 
-@mixin wideBody(){
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
 body{
   position: relative;
-  @include wideBody();
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   box-sizing: content-box;
   font-family: 'Raleway', sans-serif;
   color: $mainColor;
   font-style: italic;
-  height: 100%;
+  background-attachment: fixed;
 }
 a {
   text-decoration: none;
@@ -35,6 +33,7 @@ a {
   position: relative;
   top: 95px;
   width: 100%;
+  height: 100%;
   padding: 0;
 }
 .info-header{
