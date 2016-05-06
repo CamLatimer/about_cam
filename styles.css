@@ -85,6 +85,10 @@ a {
   cursor: pointer;
   color: white; }
 
+.resu-header a {
+  position: relative;
+  top: 40px; }
+
 span.circ-text {
   position: relative;
   top: 35%;
