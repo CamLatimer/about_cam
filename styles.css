@@ -10,7 +10,8 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #0a0a0a;
   font-style: italic;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background: #e0eaea; }
 
 a {
   text-decoration: none; }
