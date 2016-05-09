@@ -24,7 +24,7 @@
     showEls('.con-list');
   });
   $('.resu-header').click(function(){
-    window.open("https://drive.google.com/open?id=0B00DPsAoUxCldnZERjFJZHllbEU");
+    window.open("https://drive.google.com/open?id=0B00DPsAoUxCldnZERjFJZHllbEUw");
   })
 // end iife
 })();
