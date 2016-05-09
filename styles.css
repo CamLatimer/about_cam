@@ -86,6 +86,14 @@ a {
   cursor: pointer;
   color: white; }
 
+.circle:active {
+  height: 100px;
+  width: 100px;
+  top: 30%;
+  left: 5%; }
+  .circle:active .circ-text {
+    display: none; }
+
 .resu-header a {
   position: relative;
   top: 40px; }
@@ -141,7 +149,7 @@ span.circ-text {
     padding: 20px;
     font-size: 2em; }
 
-#giph-shot {
+#gif-shot {
   margin: 0 auto 35px auto; }
 
 .demo-details {
